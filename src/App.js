@@ -8,11 +8,12 @@ import Viewuser from './components/Viewuser';
 import Login from './components/Login';
 import Protected from './components/Protected';
 import Page404 from './Page404';
+import Curd from './components/Realtimestore/Curd';
 
 function App() {
   return (
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Navbar/>
       <Routes>
             <Route path="/"  element={<Dashbord/>} />
@@ -23,7 +24,8 @@ function App() {
             <Route path="/user" element={<Protected Comp={User} />}/>
             <Route path="*" element={<Page404/>}/>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <Curd/>
     </>
   );
 }
