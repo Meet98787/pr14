@@ -76,7 +76,7 @@ function Curd() {
                 <label htmlFor="name">Name</label>
                 <input type="text"  class="form-control" name="name" value={input ? input.name : ""} onChange={handleChange} />
                 <label htmlFor="email">Email</label>
-                <input type="text"  class="form-control mb-2" name="email"  value={input ? input.email : ""} onChange={handleChange} />
+                <input type="email"  class="form-control mb-2" name="email"  value={input ? input.email : ""} onChange={handleChange} />
                 <button className="btn btn-primary">{edit ? 'Update' : 'Add'}</button>
             </form>
             <table className="table table-hover">
