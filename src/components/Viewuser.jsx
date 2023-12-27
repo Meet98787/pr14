@@ -11,11 +11,24 @@ function Viewuser() {
     <div className='container'>
       <h1 className='text-center'>User Details</h1>
       {user ? (
-        <div>
-          <p>Name: {user.name}</p>
-          <p>Email: {user.email}</p>
-          {/* Add other details you want to display */}
-        </div>
+        <table>
+          <tr>
+            <td><h2>Name : </h2></td>
+            <td><h4>{user.name}</h4></td>
+          </tr>
+          <tr>
+            <td><h2>Email :</h2></td>
+            <td><h4>{user.email}</h4></td>
+          </tr>
+          <tr>
+            <td><h2>Assigned Pc : </h2></td>
+            <td><h4> {user.assignedPc}</h4></td>
+          </tr>
+          <tr>
+            <td><h2>Remark :</h2></td>
+            <td><h4>{user.remarks}</h4></td>
+          </tr>
+        </table>
       ) : (
         <p>User not found</p>
       )}
